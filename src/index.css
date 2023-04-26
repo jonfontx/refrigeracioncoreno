@@ -46,4 +46,9 @@ html, body {
   display: flex;
   margin-left: 10%;
 }
+
+#socials {
+  font-size: smaller;
+  margin-left: 0%;
+}
 }

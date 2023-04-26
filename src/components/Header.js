@@ -70,7 +70,7 @@ const Header = () => {
    } 
  }; 
  return ( 
-   <Box 
+   <Box
      position="fixed" 
      top={0} 
      left={0} 
@@ -81,7 +81,7 @@ const Header = () => {
      transitionTimingFunction="ease-in-out" 
      backgroundColor="#18181b" 
      ref={headerRef} 
-   > 
+   >
      <Box color="white" maxWidth="1280px" margin="0 auto"> 
        <HStack 
          px={16} 
@@ -89,7 +89,7 @@ const Header = () => {
          justifyContent="space-between" 
          alignItems="center" 
        > 
-         <nav> 
+         <nav id="socials"> 
            <HStack spacing={8}> 
              {socials.map(({ icon, url }) => ( 
                <a 
