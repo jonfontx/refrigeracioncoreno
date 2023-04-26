@@ -23,12 +23,11 @@ code {
 @media screen and (max-width: 768px) {
 
 .fullscreen {
-  margin-left: auto;
-  width: 30%;
+  margin-left: 115%;
 }
 
 form {
-  width: 50%;
+  width: 300px;
 }
 
 html, body {
@@ -41,5 +40,9 @@ html, body {
 #contact {
   padding-top: 0%;
   padding-bottom: 0%;
+}
+
+#bio {
+  display: flex;
 }
 }

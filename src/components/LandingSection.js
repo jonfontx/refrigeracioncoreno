@@ -4,9 +4,9 @@ import FullScreenSection from "./FullScreenSection";
 import myAvatar from "../images/avatar.JPG"
 
 
-const greeting = "Jonatan Fontebasso"; 
-const bio1 = "A front-end developer"; 
-const bio2 = "specialized in React"; 
+const greeting = "Jonatan Fontebasso";
+const bio1 = "A front-end developer";
+const bio2 = "specialized in React";
 
 const LandingSection = () => ( 
  <FullScreenSection
@@ -27,10 +27,10 @@ const LandingSection = () => (
        </Heading> 
      </VStack> 
      <VStack spacing={6}> 
-       <Heading as="h1" size="3xl" noOfLines={1}> 
+       <Heading as="h1" size="3xl" noOfLines={1} id="bio"> 
          {bio1} 
        </Heading> 
-       <Heading as="h1" size="3xl" noOfLines={1}> 
+       <Heading as="h1" size="3xl" noOfLines={1} id="bio"> 
          {bio2} 
        </Heading> 
      </VStack> 
