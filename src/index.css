@@ -44,5 +44,6 @@ html, body {
 
 #bio {
   display: flex;
+  margin-left: 5%;
 }
 }
