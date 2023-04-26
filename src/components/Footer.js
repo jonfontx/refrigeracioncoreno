@@ -14,11 +14,11 @@ const Footer = () => {
          maxWidth="1024px" 
          height={16} 
        > 
-         <p>Jonatan Fontebasso • © 2022</p> 
+         <p>Jonatan Fontebasso • © 2022 Made with React</p> 
        </Flex> 
      </footer> 
    </Box> 
  ); 
 }; 
  
-export default Footer; 
+export default Footer;

@@ -35,7 +35,7 @@ const projects = [
 
 const ProjectsSection = () => { 
  return ( 
-   <FullScreenSection 
+   <FullScreenSection
      backgroundColor="#14532d" 
      isDarkBackground 
      p={8} 
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
      <Heading as="h1" id="projects-section"> 
        Featured Projects 
      </Heading> 
-     <Box 
+     <Box id="projects"
        display="grid" 
        gridTemplateColumns="repeat(2,minmax(0,1fr))" 
        gridGap={8} 

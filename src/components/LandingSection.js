@@ -9,7 +9,7 @@ const bio1 = "A front-end developer";
 const bio2 = "specialized in React"; 
 
 const LandingSection = () => ( 
- <FullScreenSection 
+ <FullScreenSection
    justifyContent="center" 
    alignItems="center" 
    isDarkBackground 
