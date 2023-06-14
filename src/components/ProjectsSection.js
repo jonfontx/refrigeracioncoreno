@@ -15,22 +15,24 @@ const projects = [
    title: "Wordpress e-commerce",
    description:
      "Fully functional online store for a client using WordPress and WooCommerce. This project serves as a testament to my practical skills in web design and highlights my ability to deliver high-quality ecommerce solutions tailored to meet specific business requirements.",
-   getImageSrc: () => require("../images/cms.jpg"),
+   getImageSrc: () => require("../images/cms.jpeg"),
  },
 
  {
   title: "UI design with Figma",
   description:
-    "wireframe design of a website created using the Figma platform. It is a blueprint of the website's layout, structure, and content, and is intended to provide a visual representation of the website's design and functionality. The design incorporates a clean and modern aesthetic, with a color scheme that is consistent throughout the site.",
+    "Wireframe design of a website created using the Figma platform. It is a blueprint of the website's layout, structure, and content, and is intended to provide a visual representation of the website's design and functionality. The design incorporates a clean and modern aesthetic, with a color scheme that is consistent throughout the site.",
   getImageSrc: () => require("../images/figma.jpeg"),
 },
 
+/*
  {
    title: "Event planner",
    description:
      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
    getImageSrc: () => require("../images/photo4.jpg"),
  },
+*/
 
 ];
 
