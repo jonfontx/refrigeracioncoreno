@@ -7,22 +7,25 @@ const projects = [
  {
    title: "Reserve-a-table Web App",
    description:
-     "Restaurant website with booking system built using React JavaScript. Designed to be responsive and accessible, ensuring that it works seamlessly across different devices and screen sizes. Includes real-time availability updates and email confirmations to ensure a smooth and reliable reservation process.",
-   getImageSrc: () => require("../images/development.jpeg"),
+     "Demo Restaurant website with booking app built using React JavaScript.", //Includes real-time availability updates and email confirmations to ensure a smooth and reliable reservation process. Designed to be responsive and accessible, ensuring that it works seamlessly across different devices and screen sizes.//
+   getImageSrc: () => require("../images/littlelemon.png"),
+   url: "https://reactresto.netlify.app/"
  },
 
  {
    title: "Wordpress e-commerce",
    description:
-     "Fully functional online store for a client using WordPress and WooCommerce. This project serves as a testament to my practical skills in web design and highlights my ability to deliver high-quality ecommerce solutions tailored to meet specific business requirements.",
-   getImageSrc: () => require("../images/cms.jpeg"),
+     "Fully functional online store built for a client using WordPress and WooCommerce.", //This project serves as a testament to my practical skills in web design and highlights my ability to deliver high-quality ecommerce solutions tailored to meet specific business requirements.//
+   getImageSrc: () => require("../images/dulcesyantojos.png"),
+   url: "https://dulcesyantojos.es/"
  },
 
  {
   title: "UI design with Figma",
   description:
-    "Wireframe design of a website created using the Figma platform. It is a blueprint of the website's layout, structure, and content, and is intended to provide a visual representation of the website's design and functionality. The design incorporates a clean and modern aesthetic, with a color scheme that is consistent throughout the site.",
-  getImageSrc: () => require("../images/figma.jpeg"),
+    "Wireframe design of a website created using the Figma platform.", //It is a blueprint of the website's layout, structure, and content, and is intended to provide a visual representation of the website's design and functionality. The design incorporates a clean and modern aesthetic, with a color scheme that is consistent throughout the site.//
+  getImageSrc: () => require("../images/figmawireframe.png"),
+  url: "https://www.figma.com/proto/1ZS9JySXpteZ0BiZSpETAY/Restaurant-Wireframe-Portfolio?node-id=1-57&scaling=min-zoom&page-id=0%3A1&mode=design&t=AIp6dyo7iaoVKFpJ-1"
 },
 
 /*
