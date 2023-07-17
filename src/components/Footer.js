@@ -14,7 +14,7 @@ const Footer = () => {
          maxWidth="1024px" 
          height={16} 
        > 
-         <p>Jonatan Fontebasso • © 2022 • Created using React</p> 
+         <p>Jonatan Fontebasso • © 2022 • Built with React.js and Chakra UI</p> 
        </Flex> 
      </footer> 
    </Box> 

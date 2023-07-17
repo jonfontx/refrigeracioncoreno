@@ -17,7 +17,7 @@ const LandingSection = () => (
    isDarkBackground
    backgroundColor="#2A4365"
  >
-<video className='videoTag' autoPlay loop muted style={{position:"absolute"}}>
+<video className='videoTag' autoPlay loop muted style={{position:"fixed"}}>
 <source src={video} type='video/webm' />
 </video>
    <VStack spacing={16} style={{zIndex:1}} >
