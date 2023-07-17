@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useFormik } from "formik";
+import axios from "axios";
 import {
   Box,
   Button,
@@ -14,11 +15,9 @@ import {
 } from "@chakra-ui/react";
 import * as Yup from "yup";
 import FullScreenSection from "./FullScreenSection";
-import useSubmit from "../hooks/useSubmit";
 import { useAlertContext } from "../context/alertContext";
 
 const ContactMeSection = () => {
-  const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
 
   const formik = useFormik({
@@ -28,24 +27,25 @@ const ContactMeSection = () => {
       type: "hireMe",
       comment: "",
     },
-    onSubmit: async (values) => {
-      submit("https://formspree.io/f/mqkvakga", values);
-    },
     validationSchema: Yup.object({
       firstName: Yup.string().required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
       comment: Yup.string().min(25, "Must be at least 25 characters").required("Required"),
     }),
-  });
-
-  useEffect(() => {
-    if (response) {
-      onOpen(response.type, response.message);
-      if (response.type === "success") {
-        formik.resetForm();
+    onSubmit: async (values, { setSubmitting }) => {
+      try {
+        const response = await axios.post("https://formspree.io/f/mqkvakga", values);
+        console.log(response.data); // Optionally, do something with the response
+        onOpen("success", "Form submitted successfully"); // Show success message
+        formik.resetForm(); // Reset the form
+      } catch (error) {
+        console.error(error);
+        onOpen("error", "An error occurred"); // Show error message
+      } finally {
+        setSubmitting(false);
       }
-    }
-  }, [response, onOpen]);
+    },
+  });
 
   return (
     <FullScreenSection
@@ -109,7 +109,7 @@ const ContactMeSection = () => {
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading}>
+              <Button type="submit" colorScheme="purple" width="full" isLoading={formik.isSubmitting}>
                 Submit
               </Button>
             </VStack>
