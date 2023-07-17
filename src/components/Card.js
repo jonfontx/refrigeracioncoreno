@@ -1,9 +1,10 @@
-import { Heading, HStack, Image, Text, VStack } from "@chakra-ui/react"; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"; 
-import React from "react"; 
- 
-const Card = ({ title, description, imageSrc }) => { 
+import { Heading, HStack, Image, Text, VStack, Link } from "@chakra-ui/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+
+
+const Card = ({ title, description, imageSrc, url }) => { 
    return ( 
      <VStack 
        color="black" 
@@ -20,10 +21,12 @@ const Card = ({ title, description, imageSrc }) => {
          </HStack> 
          <Text color="#64748b" fontSize="lg"> 
            {description} 
-         </Text> 
-         <HStack spacing={2} alignItems="center"> 
-           <p>See more</p> 
-           <FontAwesomeIcon icon={faArrowRight} size="1x" /> 
+         </Text>
+         <HStack spacing={2} alignItems="center">
+          <Link href={url} isExternal color="blue 500">
+            { "See More" }
+           <FontAwesomeIcon icon={faArrowRight} size="1x" />
+           </Link>
          </HStack> 
        </VStack> 
      </VStack> 
