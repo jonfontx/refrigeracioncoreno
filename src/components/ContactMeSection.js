@@ -28,7 +28,7 @@ const ContactMeSection = () => {
       type: "hireMe",
       comment: "",
     },
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       submit("https://formspree.io/f/mqkvakga", values);
     },
     validationSchema: Yup.object({
@@ -45,7 +45,7 @@ const ContactMeSection = () => {
         formik.resetForm();
       }
     }
-  }, [response, formik, onOpen]);
+  }, [response, onOpen]);
 
   return (
     <FullScreenSection
@@ -56,37 +56,56 @@ const ContactMeSection = () => {
       spacing={8}
     >
       <VStack w="1024px" p={32} alignItems="flex-start" id="contact">
-        <Heading as="h1" id="contactme-section">
-          Contact me
-        </Heading>
+        <Heading>Contact me</Heading>
         <Box p={6} rounded="md" w="100%">
-          <form onSubmit={formik.handleSubmit} method="POST">
+          <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
-              <FormControl isInvalid={formik.errors.firstName && formik.touched.firstName}>
+              <FormControl
+                isInvalid={formik.errors.firstName && formik.touched.firstName}
+              >
                 <FormLabel htmlFor="firstName">Name</FormLabel>
-                <Input id="firstName" name="firstName" {...formik.getFieldProps("firstName")} />
+                <Input
+                  id="firstName"
+                  name="firstName"
+                  value={formik.values.firstName}
+                  onChange={formik.handleChange}
+                />
                 <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
               </FormControl>
               <FormControl isInvalid={formik.errors.email && formik.touched.email}>
                 <FormLabel htmlFor="email">Email Address</FormLabel>
-                <Input id="email" name="email" type="email" {...formik.getFieldProps("email")} />
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formik.values.email}
+                  onChange={formik.handleChange}
+                />
                 <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
               </FormControl>
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type" {...formik.getFieldProps("type")}>
+                <Select
+                  id="type"
+                  name="type"
+                  value={formik.values.type}
+                  onChange={formik.handleChange}
+                >
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">Open source consultancy session</option>
                   <option value="other">Other</option>
                 </Select>
               </FormControl>
-              <FormControl isInvalid={formik.errors.comment && formik.touched.comment}>
+              <FormControl
+                isInvalid={formik.errors.comment && formik.touched.comment}
+              >
                 <FormLabel htmlFor="comment">Your message</FormLabel>
                 <Textarea
                   id="comment"
                   name="comment"
                   height={250}
-                  {...formik.getFieldProps("comment")}
+                  value={formik.values.comment}
+                  onChange={formik.handleChange}
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
