@@ -19,7 +19,7 @@ const LandingSection = () => (
    isDarkBackground
    backgroundColor="#2A4365"
  >
-<video className='videoTag' autoPlay loop muted playsinline style={{position:"absolute", zIndex:0}}>
+<video className='videoTag' autoPlay loop muted style={{position:"absolute", zIndex:0}}>
 <source src={video} type='video/webm' />
 <img src={backimg} alt="Fallback Image" />
 <source src={videoMp4} type='video/mp4' />
