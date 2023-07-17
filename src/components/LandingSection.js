@@ -31,21 +31,22 @@ const LandingSection = () => (
          src={myAvatar}
          size="2xl"
          name="Jonatan Fontebasso"
+         mt={{base:"20"}}
        />
        <Heading as="h4" size="md" noOfLines={1}>
          {greeting}
        </Heading>
      </VStack>
-     <VStack spacing={6}>
+     <VStack spacing={6} mt={{base:"10"}}>
        <Heading as="h1" size="lg" noOfLines={1} id="bio">
          {bio1}
-       </Heading> 
-       <Heading as="h1" size="sm" noOfLines={1} id="bio"> 
-         {bio2} 
        </Heading>
-     </VStack> 
-   </VStack> 
- </FullScreenSection> 
+       <Heading as="h1" size="sm" noOfLines={1} id="bio">
+         {bio2}
+       </Heading>
+     </VStack>
+   </VStack>
+ </FullScreenSection>
 );
 
 export default LandingSection;
