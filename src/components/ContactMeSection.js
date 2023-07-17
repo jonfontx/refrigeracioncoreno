@@ -17,6 +17,7 @@ import * as Yup from "yup";
 import FullScreenSection from "./FullScreenSection";
 import { useAlertContext } from "../context/alertContext";
 
+
 const ContactMeSection = () => {
   const { onOpen } = useAlertContext();
 
@@ -35,12 +36,12 @@ const ContactMeSection = () => {
     onSubmit: async (values, { setSubmitting }) => {
       try {
         const response = await axios.post("https://formspree.io/f/mqkvakga", values);
-        console.log(response.data); // Optionally, do something with the response
-        onOpen("success", "Form submitted successfully"); // Show success message
-        formik.resetForm(); // Reset the form
+        console.log(response.data);
+        onOpen("success", "Form submitted successfully");
+        formik.resetForm();
       } catch (error) {
         console.error(error);
-        onOpen("error", "An error occurred"); // Show error message
+        onOpen("error", "An error occurred");
       } finally {
         setSubmitting(false);
       }
@@ -56,7 +57,7 @@ const ContactMeSection = () => {
       spacing={8}
     >
       <VStack w="1024px" p={32} alignItems="flex-start" id="contact">
-        <Heading>Contact me</Heading>
+        <Heading id="contactme">Contact me</Heading>
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>

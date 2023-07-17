@@ -1,8 +1,10 @@
 import React from "react";
 import { Avatar, Heading, VStack, background } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import myAvatar from "../images/avatar.JPG"
+import myAvatar from "../images/avatar.JPG";
 import video from '../images/codingvideo.webm';
+import backimg from "../images/backimg.png";
+import videoMp4 from "../images/videocoding.mp4"
 
 
 
@@ -19,6 +21,8 @@ const LandingSection = () => (
  >
 <video className='videoTag' autoPlay loop muted playsinline style={{position:"absolute", zIndex:0}}>
 <source src={video} type='video/webm' />
+<img src={backimg} alt="Fallback Image" />
+<source src={videoMp4} type='video/mp4' />
 </video>
    <VStack spacing={16} style={{zIndex:1}} >
      <VStack spacing={4} alignItems="center">
