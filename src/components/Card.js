@@ -24,7 +24,7 @@ const Card = ({ title, description, imageSrc, url }) => {
          </Text>
          <HStack spacing={2} alignItems="center">
           <Link href={url} isExternal color="blue 500">
-            { "See More" }
+            { "See More " }
            <FontAwesomeIcon icon={faArrowRight} size="1x" />
            </Link>
          </HStack> 
