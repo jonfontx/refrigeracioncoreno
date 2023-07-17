@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Heading, VStack, background } from "@chakra-ui/react";
+import { Avatar, Heading, VStack, useBreakpointValue } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import myAvatar from "../images/avatar.JPG";
 import video from '../images/codingvideo.webm';
@@ -16,6 +16,7 @@ const LandingSection = () => (
  <FullScreenSection
    justifyContent="center"
    alignItems="center"
+   textAlign="center"
    isDarkBackground
    backgroundColor="#2A4365"
  >
@@ -24,7 +25,7 @@ const LandingSection = () => (
 <img src={backimg} alt="Fallback Image" />
 <source src={videoMp4} type='video/mp4' />
 </video>
-   <VStack spacing={16} style={{zIndex:1}} >
+   <VStack spacing= {16} style={{zIndex:1}} >
      <VStack spacing={4} alignItems="center">
        <Avatar
          src={myAvatar}
@@ -37,7 +38,7 @@ const LandingSection = () => (
      </VStack>
      <VStack spacing={6}>
        <Heading as="h1" size="lg" noOfLines={1} id="bio">
-         {bio1} 
+         {bio1}
        </Heading> 
        <Heading as="h1" size="sm" noOfLines={1} id="bio"> 
          {bio2} 
