@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"; 
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { 
  faGithub, 
  faLinkedin, 
@@ -33,61 +33,58 @@ const url = "https://medium.com/@sureskills";
 ];
 
 
-const Header = () => { 
- const headerRef = useRef(null); 
- 
- useEffect(() => { 
-   let prevScrollPos = window.scrollY; 
- 
-   const handleScroll = () => { 
-     const currentScrollPos = window.scrollY; 
-     const headerElement = headerRef.current; 
-     if (!headerElement) { 
-       return; 
-     } 
-     if (prevScrollPos > currentScrollPos) { 
-       headerElement.style.transform = "translateY(0)"; 
-     } else { 
-       headerElement.style.transform = "translateY(-200px)"; 
-     } 
-     prevScrollPos = currentScrollPos; 
-   } 
-   window.addEventListener('scroll', handleScroll) 
- 
-   return () => { 
-     window.removeEventListener('scroll', handleScroll) 
-   } 
- }, []); 
- 
+const Header = () => {
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    const headerElement = headerRef.current;
+    if (!headerElement) {
+      return;
+    }
+
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        headerElement.style.position = "static";
+      } else {
+        headerElement.style.position = "fixed";
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
  const handleClick = (anchor) => () => { 
    const id = `${anchor}-section`; 
    const element = document.getElementById(id); 
-   if (element) { 
-     element.scrollIntoView({ 
-       behavior: "smooth", 
-       block: "start", 
-     }); 
+   if (element) {
+     element.scrollIntoView({
+       behavior: "smooth",
+       block: "start",
+     });
    } 
- }; 
- return ( 
+ };
+ return (
    <Box
-     position="fixed" 
-     top={0} 
-     left={0} 
-     right={0} 
-     translateY={0} 
-     transitionProperty="transform" 
-     transitionDuration=".3s" 
-     transitionTimingFunction="ease-in-out" 
-     backgroundColor="#18181b" 
-     ref={headerRef} 
+     position="fixed"
+     top={0}
+     left={0}
+     right={0}
+     transform="translateY(0)"
+     transition="transform 0.3s ease-in-out"
+     zIndex="9999"
+     backgroundColor="#18181b"
+     ref={headerRef}
    >
      <Box color="white" maxWidth="1280px" margin="0 auto"> 
        <HStack 
          px={16} 
          py={4} 
-         justifyContent="space-between" 
-         alignItems="center" 
+         justifyContent="space-between"
+         alignItems="center"
        > 
          <nav id="socials"> 
            <HStack spacing={8}> 
