@@ -1,19 +1,34 @@
 import React from "react";
-import { Avatar, Heading, VStack, useBreakpointValue } from "@chakra-ui/react";
+import { Avatar, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import myAvatar from "../images/avatar.JPG";
 import video from '../images/codingvideo.webm';
 import backimg from "../images/backimg.png";
 import videoMp4 from "../images/videocoding.mp4"
-
+import { useEffect } from "react";
 
 
 const greeting = "Jonatan Fontebasso";
 const bio1 = "Front-end developer";
 const bio2 = "specialized in React";
 
-const LandingSection = () => (
- <FullScreenSection
+const LandingSection = () => {
+  useEffect(() => {
+    const videoTag = document.querySelector(".videoTag");
+    const scrollHandler = () => {
+      const scrollTop = window.scrollY;
+      videoTag.style.transform = `translate3d(0, ${scrollTop * 0.5}px, 0)`;
+    };
+
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+return (
+<FullScreenSection
    justifyContent="center"
    alignItems="center"
    textAlign="center"
@@ -48,5 +63,6 @@ const LandingSection = () => (
    </VStack>
  </FullScreenSection>
 );
+};
 
 export default LandingSection;
