@@ -11,7 +11,7 @@ import { Box, HStack } from "@chakra-ui/react";
  
 const socials = [
  {
-   icon: faEnvelope, 
+   icon: faEnvelope,
    url: "mailto: jlfontebasso@icloud.com",
  },
  {
@@ -35,10 +35,10 @@ const url = "https://medium.com/@sureskills";
 
 const Header = () => { 
   const headerRef = useRef(null); 
-  
-  useEffect(() => { 
+
+  /*useEffect(() => { 
     let prevScrollPos = window.scrollY; 
-  
+
     const handleScroll = () => { 
       const currentScrollPos = window.scrollY; 
       const headerElement = headerRef.current; 
@@ -53,12 +53,12 @@ const Header = () => {
       prevScrollPos = currentScrollPos; 
     } 
     window.addEventListener('scroll', handleScroll) 
-  
+
     return () => { 
       window.removeEventListener('scroll', handleScroll) 
     } 
-  }, []); 
-  
+  }, []);*/
+
   const handleClick = (anchor) => () => { 
     const id = `${anchor}-section`; 
     const element = document.getElementById(id); 
@@ -68,7 +68,7 @@ const Header = () => {
         block: "start", 
       }); 
     } 
-  }; 
+  };
   return ( 
     <Box 
       position="fixed" 
@@ -80,7 +80,8 @@ const Header = () => {
       transitionDuration=".3s" 
       transitionTimingFunction="ease-in-out" 
       backgroundColor="#18181b" 
-      ref={headerRef} 
+      ref={headerRef}
+      zIndex={2}
     > 
      <Box color="white" maxWidth="1280px" margin="0 auto"> 
        <HStack 
@@ -98,7 +99,7 @@ const Header = () => {
                  target="_blank" 
                  rel="noopener noreferrer" 
                > 
-                 <FontAwesomeIcon icon={icon} size="2x" key={url} /> 
+                 <FontAwesomeIcon icon={icon} size="xl" key={url} /> 
                </a> 
              ))} 
            </HStack> 
