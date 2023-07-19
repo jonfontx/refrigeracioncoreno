@@ -56,7 +56,7 @@ const ContactMeSection = () => {
       py={16}
       spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start" id="contact">
+      <VStack w={{base:"-webkit-max-content" ,lg:"1024px"}} p={32} alignItems="flex-start" id="contact">
         <Heading id="contactme">Contact me</Heading>
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={formik.handleSubmit}>
