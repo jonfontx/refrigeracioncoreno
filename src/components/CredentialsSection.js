@@ -42,10 +42,25 @@ const CredentialsSection = () => {
             gridGap={40}
             style={{zIndex:1}}
             >
-            <Box borderRadius="xl" overflow="hidden" w={"-webkit-max-content"} mt={6}>
+            <Box mt={6}>
             <HStack>
-                <Document file={courseraFront}>
-                <Page pageNumber={1} />
+            <style>
+      {`
+        @media screen and (max-width: 600px) {
+          .pdf-page {
+            transform: scale(0.5);
+          }
+        }
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+          .pdf-page {
+            transform: scale(0.7);
+          }
+        }
+        /* Add more media queries as needed for different screen sizes */
+      `}
+    </style>
+                <Document file={courseraFront} >
+                <Page pageNumber={1} className="pdf-page"/>
                 </Document>
             </HStack>
             </Box>
@@ -61,18 +76,6 @@ const CredentialsSection = () => {
     </FullScreenSection>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 export default CredentialsSection;

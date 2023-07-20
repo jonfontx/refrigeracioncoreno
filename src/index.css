@@ -36,6 +36,10 @@ html, body {
   padding-bottom: 0%;
 }
 
+#certificates {
+  grid-template-columns: 1fr;
+}
+
 #bio {
   display: flex;
   margin-left: 10%;
@@ -44,6 +48,9 @@ html, body {
 #socials {
   font-size: smaller;
   margin-left: 5%;
+}
+
+#CredentialsSection {
 }
 
 }
