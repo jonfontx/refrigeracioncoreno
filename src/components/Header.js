@@ -85,13 +85,13 @@ const Header = () => {
     > 
      <Box color="white" maxWidth="1280px" margin="0 auto"> 
        <HStack 
-         px={{base:6, lg:16}} 
+         px={16}
          py={4} 
          justifyContent="space-between"
          alignItems="center"
        > 
          <nav id="socials"> 
-           <HStack spacing={8}> 
+           <HStack spacing={{base:6, lg:8}}> 
              {socials.map(({ icon, url }) => ( 
                <a 
                  key={url} 
