@@ -26,7 +26,7 @@ const CredentialsSection = () => {
 
         return (
             <FullScreenSection
-            backgroundColor="#521B41"
+            backgroundColor="rgb(82, 27, 65)"
             isDarkBackground
             p={8}
             py={16}
@@ -39,32 +39,15 @@ const CredentialsSection = () => {
             <Box id="certificates"
             display="grid"
             gridTemplateColumns="1fr 1fr"
-            gridGap={40}
+            gridGap={10}
             style={{zIndex:1}}
             >
-            <Box mt={6}>
-            <HStack>
-            <style>
-      {`
-        @media screen and (max-width: 600px) {
-          .pdf-page {
-            transform: scale(0.5);
-          }
-        }
-        @media screen and (min-width: 601px) and (max-width: 900px) {
-          .pdf-page {
-            transform: scale(0.7);
-          }
-        }
-        /* Add more media queries as needed for different screen sizes */
-      `}
-    </style>
-                <Document file={courseraFront} >
-                <Page pageNumber={1} className="pdf-page"/>
+            <HStack className="pdfbox" borderRadius={16} overflow="hidden">
+                <Document file={courseraFront}>
+                <Page pageNumber={1} className="pdf-page" width={450}/>
                 </Document>
             </HStack>
-            </Box>
-            <HStack>
+            <HStack ml={150}>
                 <div
                 data-iframe-width="150"
                 data-iframe-height="270"
