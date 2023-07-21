@@ -47,7 +47,7 @@ const CredentialsSection = () => {
                 <Page pageNumber={1} className="pdf-page" width={450}/>
                 </Document>
             </HStack>
-            <HStack ml={150}>
+            <HStack ml={100}>
                 <div
                 data-iframe-width="150"
                 data-iframe-height="270"
