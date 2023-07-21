@@ -39,7 +39,7 @@ const CredentialsSection = () => {
             <Box id="certificates"
             display="grid"
             gridTemplateColumns="1fr 1fr"
-            gridGap={60}
+            gridGap={40}
             style={{zIndex:1}}
             >
             <HStack className="pdfbox" borderRadius={16} overflow="hidden">
