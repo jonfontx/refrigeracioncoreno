@@ -40,8 +40,8 @@ return (
 <img src={backimg} alt="Fallback Image" />
 <source src={videoMp4} type='video/mp4' />
 </video>
-   <VStack spacing= {16} style={{zIndex:1}} >
-     <VStack spacing={4} alignItems="center">
+   <VStack spacing= {16} style={{zIndex:1}}>
+     <VStack spacing={4}>
        <Avatar
          src={myAvatar}
          size="2xl"
