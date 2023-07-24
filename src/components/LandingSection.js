@@ -29,6 +29,7 @@ const LandingSection = () => {
 
 return (
 <FullScreenSection
+className="landing"
    justifyContent="center"
    alignItems="center"
    textAlign="center"
