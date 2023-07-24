@@ -26,6 +26,7 @@ const CredentialsSection = () => {
 
         return (
             <FullScreenSection
+            id="credentialsSection"
             backgroundColor="rgb(82, 27, 65)"
             isDarkBackground
             p={8}
@@ -33,7 +34,7 @@ const CredentialsSection = () => {
             alignItems="flex-start"
             spacing={8}
      >
-        <Heading as="h1" id="CredentialsSection">
+        <Heading as="h1" id="credHeading">
             Credentials
         </Heading>
             <Box id="certificates"

@@ -31,7 +31,7 @@ html, body {
 #projects {
   grid-template-columns: 1fr;
 }
-#contact {
+#contactme {
   padding-top: 0%;
   padding-bottom: 0%;
 }
@@ -40,7 +40,7 @@ html, body {
   grid-template-columns: 1fr;
 }
 
-#CredentialsSection {
+#credHeading {
   margin-left: 20%;
 }
 
