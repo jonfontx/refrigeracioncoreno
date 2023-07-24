@@ -1,13 +1,16 @@
-import React, { useEffect, useRef } from "react"; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import React, { useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { 
- faGithub, 
- faLinkedin, 
+import {
+ faGithub,
+ faLinkedin,
  faMedium,
  faStackOverflow,
-} from "@fortawesome/free-brands-svg-icons"; 
-import { Box, HStack } from "@chakra-ui/react"; 
+} from "@fortawesome/free-brands-svg-icons";
+import { Box, HStack, Link } from "@chakra-ui/react";
+
+
+
  
 const socials = [
  {
@@ -105,17 +108,32 @@ const Header = () => {
            </HStack> 
          </nav> 
          <nav> 
-           <HStack spacing={8}> 
-             <a href="#projects-section" onClick={handleClick("projects-section")}>
-               Projects 
-             </a> 
-             <a href="#credentialsSection" onClick={handleClick("credentialsSection")}>
+           <HStack spacing={8}>
+            <Link
+            href="#projects-section"
+            color="white"
+            transition="color 0.3s ease"
+            _hover={{color:"green.500"}}
+            >
+              Projects
+            </Link>
+            <Link
+            href="#credentialsSection"
+            color="white"
+            transition="color 0.3s ease"
+            _hover={{color:"green.500"}}
+            >
               Credentials
-             </a>
-             <a href="#contactme" onClick={handleClick("contactme")}> 
-               Contact Me
-             </a> 
-           </HStack> 
+            </Link>
+            <Link
+            href="#contactme"
+            color="white"
+            transition="color 0.3s ease"
+            _hover={{color:"green.500"}}
+            >
+              Contact Me
+            </Link>
+           </HStack>
          </nav> 
        </HStack> 
      </Box> 
