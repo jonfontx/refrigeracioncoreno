@@ -108,7 +108,7 @@ const Header = () => {
            </HStack> 
          </nav>
          <nav>
-           <HStack spacing={{base:6, lg:8}} fontSize={{base:13, lg:16}}>
+           <HStack spacing={{base:4, lg:8}} fontSize={{base:13, lg:16}}>
             <Link
             href="#projects-section"
             color="white"
