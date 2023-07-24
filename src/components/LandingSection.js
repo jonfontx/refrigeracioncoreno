@@ -38,7 +38,6 @@ return (
 <video className='videoTag' autoPlay="autoPlay" loop="loop" muted="muted" playsInline="playsInline" style={{position:"absolute", zIndex:0}}>
 <source src={video} type='video/webm' />
 <img src={backimg} alt="Fallback Image" />
-<source src={videoMp4} type='video/mp4' />
 </video>
    <VStack spacing= {16} style={{zIndex:1}}>
      <VStack spacing={4}>
