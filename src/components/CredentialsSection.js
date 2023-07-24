@@ -39,22 +39,22 @@ const CredentialsSection = () => {
             <Box id="certificates"
             display="grid"
             gridTemplateColumns="1fr 1fr"
-            gridGap={40}
+            gridGap={20}
             style={{zIndex:1}}
             >
-            <HStack className="pdfbox" borderRadius={16} overflow="hidden">
+            <HStack className="pdfbox" borderRadius={16} overflow="hidden" width={750}>
                 <Document file={courseraFront}>
-                <Page pageNumber={1} className="pdf-page" width={450}/>
+                <Page pageNumber={1} className="pdf-page"/>
                 </Document>
             </HStack>
-            <HStack ml={100}>
+            <VStack py={{base:5 ,lg:150}}>
                 <div
                 data-iframe-width="150"
                 data-iframe-height="270"
                 data-share-badge-id="632cc7f1-ebe6-4bae-be05-ba2cba6fed79"
                 data-share-badge-host="https://www.credly.com"
                 ></div>
-            </HStack>
+            </VStack>
         </Box>
     </FullScreenSection>
   );
