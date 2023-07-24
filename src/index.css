@@ -40,9 +40,17 @@ html, body {
   grid-template-columns: 1fr;
 }
 
+#CredentialsSection {
+  margin-left: 20%;
+}
+
 #bio {
   display: flex;
   margin-left: 10%;
+}
+
+#certificateBox {
+  transform: scale(0.6);
 }
 
 }

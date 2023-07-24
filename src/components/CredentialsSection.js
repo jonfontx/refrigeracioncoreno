@@ -39,15 +39,17 @@ const CredentialsSection = () => {
             <Box id="certificates"
             display="grid"
             gridTemplateColumns="1fr 1fr"
-            gridGap={20}
+            gridGap={{base:0,lg:20}}
             style={{zIndex:1}}
             >
+            <Box id="certificateBox">
             <HStack className="pdfbox" borderRadius={16} overflow="hidden" width={750}>
                 <Document file={courseraFront}>
                 <Page pageNumber={1} className="pdf-page"/>
                 </Document>
             </HStack>
-            <VStack py={{base:5 ,lg:150}}>
+            </Box>
+            <VStack py={{base:0 ,lg:150}}>
                 <div
                 data-iframe-width="150"
                 data-iframe-height="270"
