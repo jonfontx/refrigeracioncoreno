@@ -78,23 +78,23 @@ const Header = () => {
       top={0} 
       left={0} 
       right={0} 
-      translateY={0} 
-      transitionProperty="transform" 
-      transitionDuration=".3s" 
-      transitionTimingFunction="ease-in-out" 
-      backgroundColor="#18181b" 
+      translateY={0}
+      transitionProperty="transform"
+      transitionDuration=".3s"
+      transitionTimingFunction="ease-in-out"
+      backgroundColor="#18181b"
       ref={headerRef}
       zIndex={2}
-    > 
+    >
      <Box color="white" maxWidth="1280px" margin="0 auto"> 
        <HStack 
-         px={{base:4,lg:16}}
+         px={{base:8,lg:16}}
          py={4} 
          justifyContent="space-between"
          alignItems="center"
        > 
          <nav id="socials"> 
-           <HStack spacing={{base:5, lg:8}}> 
+           <HStack spacing={{base:6, lg:8}}> 
              {socials.map(({ icon, url }) => ( 
                <a 
                  key={url} 
@@ -108,7 +108,7 @@ const Header = () => {
            </HStack> 
          </nav> 
          <nav> 
-           <HStack spacing={8}>
+           <HStack spacing={{base:6, lg:8}} fontSize={{base:14}}>
             <Link
             href="#projects-section"
             color="white"
