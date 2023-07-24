@@ -34,7 +34,7 @@ const CredentialsSection = () => {
             alignItems="flex-start"
             spacing={8}
      >
-        <Heading as="h1" id="credHeading">
+        <Heading as="h1">
             Credentials
         </Heading>
             <Box id="certificates"

@@ -38,10 +38,7 @@ html, body {
 
 #certificates {
   grid-template-columns: 1fr;
-}
-
-#credHeading {
-  margin-left: 20%;
+  margin: auto;
 }
 
 #bio {
@@ -50,7 +47,7 @@ html, body {
 }
 
 #certificateBox {
-  transform: scale(0.6);
+  display: none;
 }
 
 }
