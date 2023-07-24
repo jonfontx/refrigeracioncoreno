@@ -94,7 +94,7 @@ const Header = () => {
          alignItems="center"
        > 
          <nav id="socials"> 
-           <HStack spacing={{base:6, lg:8}}> 
+           <HStack spacing={{base:4, lg:8}}> 
              {socials.map(({ icon, url }) => ( 
                <a 
                  key={url} 
@@ -108,7 +108,7 @@ const Header = () => {
            </HStack> 
          </nav> 
          <nav> 
-           <HStack spacing={{base:6, lg:8}} fontSize={{base:14}}>
+           <HStack spacing={{base:6, lg:8}} fontSize={{base:13}}>
             <Link
             href="#projects-section"
             color="white"
