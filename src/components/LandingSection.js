@@ -8,9 +8,9 @@ import videoMp4 from "../images/videocoding.mp4"
 import { useEffect } from "react";
 
 
-const greeting = "Jonatan Fontebasso";
-const bio1 = "Front-end developer";
-const bio2 = "specialized in React";
+const greeting = "Refrigeración Coreno";
+const bio1 = "Servicio Técnico";
+const bio2 = "especializado en neveras y congeladoras";
 
 const LandingSection = () => {
   useEffect(() => {
