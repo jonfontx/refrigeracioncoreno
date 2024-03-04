@@ -1,15 +1,16 @@
 import React from "react";
 import { Avatar, Heading, VStack, HStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import myAvatar from "../images/avatar.JPG";
+import myAvatar from "../images/avatar.png";
 import backimg from "../images/backimg.png";
 import videowebm from "../images/fridgehome.webm"
+import videoMP4 from "../images/fridgehome.mp4"
 import { useEffect } from "react";
 
 
 const greeting = "Refrigeración Coreno";
 const bio1 = "Servicio Técnico";
-const bio2 = "especializado en neveras y congelador";
+const bio2 = "Especializado en neveras y congeladores";
 
 const LandingSection = () => {
   useEffect(() => {
@@ -38,6 +39,7 @@ className="landing"
 <video className='videoTag' autoPlay="autoPlay" loop="loop" muted="muted" playsInline="playsInline" style={{position:"absolute", zIndex:0}}>
 <source src={videowebm} type="video/webm" />
 <img src={backimg} alt="Fallback Image" />
+<source src={videoMP4} type="video/mp4" />
 </video>
    <VStack spacing= {16} style={{zIndex:1}}>
      <VStack spacing={4}>
