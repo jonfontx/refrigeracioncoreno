@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 const greeting = "Refrigeración Coreno";
 const bio1 = "Servicio Técnico";
-const bio2 = "especializado en neveras y congeladoras";
+const bio2 = "especializado en neveras y congelador";
 
 const LandingSection = () => {
   useEffect(() => {
@@ -37,7 +37,6 @@ className="landing"
    backgroundColor="#2A4365"
  >
 <video className='videoTag' autoPlay="autoPlay" loop="loop" muted="muted" playsInline="playsInline" style={{position:"absolute", zIndex:0}}>
-<source src={video} type='video/webm' />
 <img src={backimg} alt="Fallback Image" />
 <source src={videoMp4} type='video/mp4' />
 </video>
@@ -46,7 +45,7 @@ className="landing"
        <Avatar
          src={myAvatar}
          size="2xl"
-         name="Jonatan Fontebasso"
+         name="Refrigeración Coreno"
          mt={{base:"20"}}
        />
        <Heading as="h4" size="md" noOfLines={1}>
