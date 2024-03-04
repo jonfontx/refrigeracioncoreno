@@ -3,7 +3,7 @@ import { Avatar, Heading, VStack, HStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import myAvatar from "../images/avatar.JPG";
 import backimg from "../images/backimg.png";
-import videoMp4 from "../images/videocoding.mp4"
+import videowebm from "../images/fridgehome.webm"
 import { useEffect } from "react";
 
 
@@ -36,8 +36,8 @@ className="landing"
    backgroundColor="#2A4365"
  >
 <video className='videoTag' autoPlay="autoPlay" loop="loop" muted="muted" playsInline="playsInline" style={{position:"absolute", zIndex:0}}>
+<source src={videowebm} type="video/webm" />
 <img src={backimg} alt="Fallback Image" />
-<source src={videoMp4} type='video/mp4' />
 </video>
    <VStack spacing= {16} style={{zIndex:1}}>
      <VStack spacing={4}>
