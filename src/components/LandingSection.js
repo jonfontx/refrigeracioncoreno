@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Heading, VStack, HStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import myAvatar from "../images/avatar.png";
+import myAvatar from "../images/avatar.jpeg";
 import backimg from "../images/backimg.png";
 import videowebm from "../images/fridgehome.webm"
 import videoMP4 from "../images/fridgehome.mp4"
