@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 const greeting = "Refrigeración Coreno";
 const bio1 = "Servicio Técnico";
-const bio2 = "Especializado en neveras y congeladores";
+const bio2 = "Especializado en neveras y congeladoras";
 
 const LandingSection = () => {
   useEffect(() => {

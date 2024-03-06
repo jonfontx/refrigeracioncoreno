@@ -5,27 +5,24 @@ import Card from "./Card";
 
 const projects = [
  {
-   title: "Front-end web app",
+   title: "Reparación y Mantenimiento",
    description:
-     "Demo Restaurant website with reserve-a-table app built using React JavaScript, HTML and CSS.", //Includes real-time availability updates and email confirmations to ensure a smooth and reliable reservation process. Designed to be responsive and accessible, ensuring that it works seamlessly across different devices and screen sizes.//
+     "Neveras y congeladoras familiares y comerciales. Todas las marcas",
    getImageSrc: () => require("../images/littlelemon.png"),
-   url:"https://reactresto.netlify.app/"
  },
 
  {
-   title: "Wordpress e-commerce",
+   title: "Velocidad, Eficacia y Garantía",
    description:
-     "Fully functional online store built for a company using WordPress and WooCommerce.", //This project serves as a testament to my practical skills in web design and highlights my ability to deliver high-quality ecommerce solutions tailored to meet specific business requirements.//
+     "En el menor tiempo, al menor costo. Trabajos garantizados por 3 meses. 30 años de experiencia nos avalan",
    getImageSrc: () => require("../images/dulcesyantojos.png"),
-   url:"https://dulcesyantojos.es/"
  },
 
  {
-  title: "UI design with Figma",
+  title: "Ubicación",
   description:
-    "Wireframe design of the demo website created using the Figma platform.", //It is a blueprint of the website's layout, structure, and content, and is intended to provide a visual representation of the website's design and functionality. The design incorporates a clean and modern aesthetic, with a color scheme that is consistent throughout the site.//
+    "Operamos en Málaga Capital y Costa del Sol",
   getImageSrc: () => require("../images/figmawireframe.png"),
-  url:"https://www.figma.com/proto/1ZS9JySXpteZ0BiZSpETAY/Restaurant-Wireframe-Portfolio?node-id=1-57&scaling=min-zoom&page-id=0%3A1&mode=design&t=AIp6dyo7iaoVKFpJ-1"
 },
 
 /*
@@ -49,7 +46,7 @@ const ProjectsSection = () => {
      spacing={8}
    >
      <Heading as="h1" id="projects-section" style={{zIndex:1}}>
-       Featured Projects
+       Nuestros Servicios
      </Heading>
      <Box id="projects"
        display="grid"
