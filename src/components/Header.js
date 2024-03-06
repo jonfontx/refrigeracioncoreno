@@ -2,10 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
- faGithub,
- faLinkedin,
- faMedium,
- faStackOverflow,
+  faFacebook,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack, Link } from "@chakra-ui/react";
 
@@ -15,15 +13,15 @@ import { Box, HStack, Link } from "@chakra-ui/react";
 const socials = [
  {
    icon: faEnvelope,
-   url: "mailto: jlfontebasso@icloud.com",
+   url: "mailto: boretto1910@gmail.com",
  },
  {
-   icon: faGithub,
-   url: "https://github.com/jonfontx",
+   icon: faFacebook,
+   url: "https://www.facebook.com/profile.php?id=61556445633982",
  },
  {
-   icon: faLinkedin,
-   url: "https://www.linkedin.com/in/jonatan-fontebasso",
+   icon: faPhone,
+   url: "tel:+34607957941",
  },
 /*
 const icon = "faMedium";
