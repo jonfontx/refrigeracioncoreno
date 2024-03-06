@@ -1,16 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
-  faEnvelope,
   faFacebook,
-  faPhone,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack, Link } from "@chakra-ui/react";
 
 
 
- 
+
 const socials = [
  {
    icon: faEnvelope,
