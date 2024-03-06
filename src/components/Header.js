@@ -20,7 +20,7 @@ const socials = [
  },
  {
    icon: faPhone,
-   url: "tel:+34607957941",
+   url: "tel:+34951151642",
  },
 /*
 const icon = "faMedium";
