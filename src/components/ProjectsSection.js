@@ -22,7 +22,7 @@ const projects = [
   title: "Ubicación",
   description:
     "Operamos en Málaga Capital y Costa del Sol",
-  getImageSrc: () => require("../images/figmawireframe.png"),
+  getImageSrc: () => require("../images/mijas.jpeg"),
 },
 
 /*
