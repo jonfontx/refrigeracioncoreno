@@ -52,7 +52,7 @@ const ContactMeSection = () => {
     <FullScreenSection
       className="fullscreen"
       isDarkBackground
-      backgroundColor="#45a9a2"
+      backgroundColor="#4b9dbd"
       py={16}
       spacing={8}
     >
