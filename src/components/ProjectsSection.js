@@ -8,7 +8,8 @@ const projects = [
    title: "Reparación y Mantenimiento",
    description:
      "Neveras y congeladoras familiares y comerciales. Todas las marcas",
-   getImageSrc: () => require("../images/reparacion.JPG"),
+     getMediaSrc: () => require("../images/tecnico1.webm"),
+     mediaType: "video",
  },
 
  {
