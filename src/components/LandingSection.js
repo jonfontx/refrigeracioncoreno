@@ -53,7 +53,7 @@ className="landing"
          {greeting}
        </Heading>
      </VStack>
-     <VStack spacing={6} align="center" justify="center" mt={{base:"10"}} >
+     <VStack spacing={6} align="center" justify="center" mt={{base:"15"}} >
        <Heading as="h1" size="lg" noOfLines={1} id="bio">
          {bio1}
        </Heading>
