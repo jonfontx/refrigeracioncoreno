@@ -115,14 +115,6 @@ const Header = () => {
               Nuestros Servicios
             </Link>
             <Link
-            href="#credentialsSection"
-            color="white"
-            transition="color 0.3s ease"
-            _hover={{color:"green.500"}}
-            >
-              Credenciales
-            </Link>
-            <Link
             href="#contactme"
             color="white"
             transition="color 0.3s ease"
