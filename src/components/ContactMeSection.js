@@ -111,7 +111,7 @@ const ContactMeSection = () => {
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
               <Button type="submit" colorScheme="purple" width="full" isLoading={formik.isSubmitting}>
-                Submit
+                Enviar
               </Button>
             </VStack>
           </form>
