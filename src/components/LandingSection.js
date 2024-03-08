@@ -48,6 +48,7 @@ className="landing"
          size="2xl"
          name="Refrigeración Coreno"
          mt={{base:"0"}}
+         mb={{base:"0"}}
        />
        <Heading as="h4" size="md" noOfLines={1}>
          {greeting}
