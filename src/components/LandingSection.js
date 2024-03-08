@@ -47,13 +47,13 @@ className="landing"
          src={myAvatar}
          size="2xl"
          name="Refrigeración Coreno"
-         mt={{base:"1"}}
+         mt={{base:"0"}}
        />
        <Heading as="h4" size="md" noOfLines={1}>
          {greeting}
        </Heading>
      </VStack>
-     <VStack spacing={6} align="center" justify="center" mt={{base:"10"}} >
+     <VStack spacing={6} align="center" justify="center" mt={{base:"50"}} >
        <Heading as="h1" size="lg" noOfLines={1} id="bio">
          {bio1}
        </Heading>
