@@ -47,7 +47,7 @@ className="landing"
          src={myAvatar}
          size="2xl"
          name="Refrigeración Coreno"
-         mt={{base:"0"}}
+         mt={{base:"10"}}
          mb={{base:"0"}}
        />
        <Heading as="h4" size="md" noOfLines={1}>
