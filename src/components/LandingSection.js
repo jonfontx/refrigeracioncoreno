@@ -42,7 +42,7 @@ className="landing"
 <source src={videoMP4} type="video/mp4" />
 </video>
    <VStack spacing= {16} style={{zIndex:1}}>
-     <VStack spacing={4}>
+     <VStack spacing={4} align="center" justify="center">
        <Avatar
          src={myAvatar}
          size="2xl"
@@ -53,7 +53,7 @@ className="landing"
          {greeting}
        </Heading>
      </VStack>
-     <VStack spacing={6} mt={{base:"10"}}>
+     <VStack spacing={6} align="center" justify="center" mt={{base:"10"}} >
        <Heading as="h1" size="lg" noOfLines={1} id="bio">
          {bio1}
        </Heading>
