@@ -9,8 +9,7 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 
-
-
+/*
 const CredentialsSection = () => {
     useEffect(() => {
         const script = document.createElement('script');
@@ -65,3 +64,5 @@ const CredentialsSection = () => {
 
 
 export default CredentialsSection;
+
+*/
