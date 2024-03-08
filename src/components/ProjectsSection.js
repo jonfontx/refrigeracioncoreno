@@ -15,14 +15,14 @@ const projects = [
    title: "Velocidad, Eficacia y Garantía",
    description:
      "En el menor tiempo, al menor costo. Trabajos garantizados por 3 meses. 30 años de experiencia nos avalan",
-   getImageSrc: () => require("../images/dulcesyantojos.png"),
+   getImageSrc: () => require("../images/calidad.jpeg"),
  },
 
  {
   title: "Ubicación",
   description:
-    "Operamos en Málaga Capital y Costa del Sol",
-  getImageSrc: () => require("../images/mijas.jpeg"),
+    "Operamos en Málaga Capital y Costa del Sol, España.  No dude en consultar",
+  getImageSrc: () => require("../images/ubicacion.jpeg"),
 },
 
 /*
